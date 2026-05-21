@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理單字</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>管理單字</h1>
+        <form id="add-word-form">
+            <label for="english">英文單字：</label>
+            <input type="text" id="english" required>
+            <label for="chinese">中文解釋：</label>
+            <input type="text" id="chinese" required>
+            <label for="pos">詞性：</label>
+            <input type="text" id="pos" required>
+            <label for="root">字根分析：</label>
+            <textarea id="root" required></textarea>
+            <button type="submit">添加單字</button>
+        </form>
+        <h2>現有單字</h2>
+        <ul id="word-list"></ul>
+        <a href="index.html">返回學習頁面</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
